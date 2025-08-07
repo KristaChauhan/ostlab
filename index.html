@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bright Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+    <body data-theme="light"> <!-- You can change "light" to "dark" for default -->
+
+  <!-- Theme Toggle Button -->
+  <div style="text-align:right; padding: 10px 20px;">
+    <button id="theme-toggle" style="
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    ">🌞 Light Mode</button>
+  </div>
+  <div class="animated-bg"></div>
+  <div class="container glass">
+    <header>
+      <h1>My Journal</h1>
+      
+    </header>
+
+    <section class="filters">
+      <input type="text" id="searchInput" placeholder="Search posts..." />
+    </section>
+
+    <form id="postForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="content" placeholder="Write in **markdown**..." required></textarea>
+      <input type="text" id="tags" placeholder="Tags (comma separated)" />
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <div id="postList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
