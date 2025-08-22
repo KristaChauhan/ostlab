@@ -1,1 +1,1 @@
-My first Git file
+Hello from Alice branch
